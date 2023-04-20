@@ -38,7 +38,7 @@ const categories: string[] = [
 
 <style scoped>
     .price-input {
-        width: 75px;
+        width: 125px;
     }
     .dollar-sign {
         font-size: 1.5em;

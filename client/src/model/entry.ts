@@ -6,5 +6,6 @@ export interface Entry {
     entryId: string;
     category: string;
     price: number;
+    date: number;
 }
 
