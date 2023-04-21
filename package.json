@@ -1,11 +1,26 @@
 {
-  "name": "dollar-detective",
-  "version": "1.0.0",
-  "description": "software engineering project",
+    "name": "dollar-detective",
+    "version": "1.0.0",
+    "description": "software engineering project",
+    "license": "BSD",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/justenbetcher/Dollar-Detective.git"
+    },
+    "private": true,
+    "workspaces": [
+        "client"
+    ],
+    "scripts": {
+        "build": "npm i -ws && npm run build -ws",
+        "start": "node server/index.js",
+        "dev": "nodemon server/index.js --watch server"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    },
+    "devDependencies": {
+        "nodemon":  "^2.0.22"
+    }
 
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC"
 }
