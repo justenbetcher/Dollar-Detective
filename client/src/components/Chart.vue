@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import * as d3 from 'd3';
 
-const timeFrame = ref("");
+const timeFrame = ref("week");
 
 const timeFrames = [
     "week",

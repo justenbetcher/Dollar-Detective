@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { RouterLink } from 'vue-router';
+import { useSession, useLogout } from '../model/session';
+
+const session = useSession();
 
 const isActive = ref(true);
 </script>
@@ -37,7 +40,7 @@ const isActive = ref(true);
                     <div class="field is-grouped">
                         <p class="control">
                             <p class="navbar-item" href="#">
-                                user(<a href="#">logout</a>)
+                                {{ session.user?.name }}(<a href="#" @click="useLogout()">Log Out</a>)
                             </p>
                         </p>
                         <p class="control">
