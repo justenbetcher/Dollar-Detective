@@ -61,6 +61,7 @@ import  { setBudget, type Budget } from '../model/budget';
 }
 span {
     font-size: 1.25em;
+    margin-right: 3px;
 }
 
 

@@ -2,6 +2,7 @@
 import { ref } from 'vue';
 import { useSession } from '../model/session';
 import { addOtherIncome } from '@/model/budget';
+import OtherIncomeForm from '@/components/OtherIncomeForm.vue';
 import ProfileForm from '../components/ProfileForm.vue';
 import BudgetForm from '../components/BudgetForm.vue';
 
@@ -52,12 +53,7 @@ import BudgetForm from '../components/BudgetForm.vue';
                         <p class="field">{{ session.user?.budget.budgetPercentage }}</p>
 
                         
-                        <p class="label">Other income at the moment</p>
-                        <div class="control field">
-                            <span>$</span>
-                            <input type="number" class="input field" v-model="otherIncome">
-                        </div>
-                        <button class="button field is-light" @click="addOtherIncome(otherIncome)">Add Income to Weekly Budget</button>
+                        <OtherIncomeForm />
                     </div>
                     <div v-else>
                         <BudgetForm />
@@ -107,5 +103,6 @@ import BudgetForm from '../components/BudgetForm.vue';
     }
     span {
         font-size: 1.25em;
+        margin-right: 3px;
     }
 </style>
