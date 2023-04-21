@@ -2,7 +2,7 @@
 import { ref } from 'vue';
 import * as d3 from 'd3';
 
-const timeFrame = ref("week");
+const selected = ref("week");
 
 const timeFrames = [
     "week",
@@ -16,9 +16,9 @@ const timeFrames = [
 
 <template>
     <div class="container">
-        <p>This is the chart view for {{ timeFrame }}</P>
+        <p>This is the chart view for {{ selected }}</P>
         <div class="time-container">
-            <a class="time-frame has-text-info" v-for="time, i in timeFrames" v-bind:class="{ 'is-active': time == timeFrame }" @click="timeFrame = time">{{ time }}</a>
+            <a class="time-frame has-text-info" v-for="time, i in timeFrames" v-bind:class="{ 'is-active': time == selected }" @click="selected = time">{{ time }}</a>
         </div>
         
     </div>

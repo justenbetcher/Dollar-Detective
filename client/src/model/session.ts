@@ -11,6 +11,7 @@ const session = reactive({
 interface User  {
     userId?: string;
     name: string;
+    email?: string;
     password?: string;
     budget?: Budget;
     entryHistory?: Entry[];
@@ -24,6 +25,9 @@ export function useSession() {
 export function useLogin() {
     session.user = {
         name: 'john doe',
+        email: 'johndoe@email.com',
+        userId: 'johndoe0',
+        password: 'password'
     }
 }
 

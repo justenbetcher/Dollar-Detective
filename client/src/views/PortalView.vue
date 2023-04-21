@@ -23,8 +23,6 @@ const isSignIn = ref(true);
               </div>
 
             </div>
-
-              <div class="has-text-primary has-text-centered"> message </div>
                 <div class="field has-text-primary">
                     Email
                     <input class="input has-text-primary" type="text" placeholder="Email">
@@ -35,9 +33,8 @@ const isSignIn = ref(true);
                     <input class="input has-text-primary" type="password" placeholder="Password">
                 </div>
 
-                <button class="button" @click="useLogin()">Continue
-                </button>
-          </div>
+                <button class="button" @click="useLogin()">Continue</button>
+            </div>
       </div>
 
     </div>

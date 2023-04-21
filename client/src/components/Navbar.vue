@@ -44,11 +44,11 @@ const isActive = ref(true);
                             </p>
                         </p>
                         <p class="control">
-                            <a class="button is-dark profile" href="#">
+                            <RouterLink to="/profile" class="button is-dark profile">
                                 <span class="icon">
                                     <i class="fas fa-user"></i>
                                 </span>
-                            </a>
+                            </RouterLink>
                         </p>
                     </div>
                 </div>

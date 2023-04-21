@@ -27,7 +27,8 @@ const categories: string[] = [
     <div class="field">
         <label class="label">Enter Total Price</label>
         <div class="control">
-            <span class="dollar-sign">$</span><input class="input price-input" type="number" min="0" placeholder="Price">
+            <span class="dollar-sign">$</span>
+            <input class="input price-input" type="number" min="0" placeholder="Price">
         </div>
     </div>
 
