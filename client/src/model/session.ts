@@ -1,5 +1,6 @@
 import { reactive } from 'vue';
 import { useRouter } from 'vue-router';
+import * as myFetch from './myFetch';
 import type { Budget }  from './budget';
 import type { Entry } from './entry';
 import type { Stats } from './stats';
@@ -29,6 +30,13 @@ export function useLogin() {
         id: 'johndoe0',
         password: 'password'
     }
+}
+
+export function api(url: string, data?: any, method?: string, headers?: any) {
+    return myFetch.api(url, data, method, headers)
+        .catch(err => {
+            console.log({err});
+        })
 }
 
 export function useLogout() {
