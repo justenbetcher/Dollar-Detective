@@ -10,12 +10,12 @@ function getById(id) {
 
 function add(item) {
     const date = new Date().valueOf();
-    item.userId = item.name.replace(/\s/g, '').toLowerCase() + date;
+    item.id = item.name.replace(/\s/g, '').toLowerCase() + date;
     data.users.push(item);
 }
 
 function deleteItem(item) {
-    const index = data.users.findIndex(user => userId === item.id);
+    const index = data.users.findIndex(user => user.id === item.id);
     data.users.splice(index, 1);
 }
 

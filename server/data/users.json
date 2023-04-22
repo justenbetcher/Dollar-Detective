@@ -1,5 +1,38 @@
 {
     "users": [
-        
+        {
+            "id": "johndoe0",
+            "name": "John Doe",
+            "email": "johndoe@email.com",
+            "password": "password",
+            "budget": {
+                "isSalary": true,
+                "salary": 123000,
+                "otherIncome": [
+                    {
+                        "date": 1,
+                        "income": 15
+                    },
+                    {
+                        "date": 2,
+                        "income": 300
+                    },
+                    {
+                        "date": 2,
+                        "income": 152
+                    }
+                ],
+                "budgetPercentage": 0.12
+            },
+            "entryHistory": [
+                {
+                    "userId": "johndoe0",
+                    "entryId": "johndoe01",
+                    "category": "dining",
+                    "price": 100,
+                    "date": 2
+                }
+            ]
+        }
     ]
 }
